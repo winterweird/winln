@@ -1,5 +1,8 @@
 # winln
+
 Really simple shell script for replacing Unix line endings with Windows line endings using zip and unzip
+
+**NOTE:** Script might misbehave if used on a file without an extension. A filename with name `file` would be transcribed to the file `file.win.file`, which may not be what you want. Still, I figure it's not a big deal, since Windows would probably be confused about that kind of file anyways.
 
 ## Dependencies
 
@@ -16,7 +19,7 @@ $> chmod +x winln.sh
 ## Usage
 
 ```
-$> winln.sh filename.a filename.b filename.c
+$> ./winln.sh filename.a filename.b filename.c
 ```
 
 **Output:** Files named `filename.win.a`, `filename.win.b` and `filename.win.c` with Windows line endings.
